@@ -36,3 +36,16 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+# Node modules
+node_modules/
+
+# Expo files (if you're using Expo)
+.expo/
+.expo-shared/
+
+# React Native build files
+android/
+ios/
+
+# Logs
+*.log
