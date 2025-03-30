@@ -1,35 +1,50 @@
-import { Text, SafeAreaView, StyleSheet } from 'react-native';
-
-// You can import supported modules from npm
-import { Card } from 'react-native-paper';
-
-// or any files within the Snack
-import AssetExample from './components/AssetExample';
+import React from 'react';
+import { View, StatusBar } from 'react-native';
+import styles from "../styles";
+import Row from "../Row";
+import Column from "../Column";
+import Box from "../Box";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.paragraph}>
-        Change code in the editor and watch it change on your phone! Save to get a shareable url.
-      </Text>
-      <Card>
-        <AssetExample />
-      </Card>
-    </SafeAreaView>
+    <View style={styles.container}>
+      <StatusBar hidden={false} />
+
+      {/* First Row */}
+      <Row>
+        <Column>
+          <Box>#1</Box>
+          <Box>#2</Box>
+        </Column>
+        <Column>
+          <Box>#3</Box>
+          <Box>#4</Box>
+        </Column>
+      </Row>
+
+      {/* Second Row */}
+      <Row>
+        <Column>
+          <Box>#5</Box>
+          <Box>#6</Box>
+        </Column>
+        <Column>
+          <Box>#7</Box>
+          <Box>#8</Box>
+        </Column>
+      </Row>
+
+      {/* Third Row */}
+      <Row>
+        <Column>
+          <Box>#9</Box>
+          <Box>#10</Box>
+        </Column>
+        <Column>
+          <Box>#11</Box>
+          <Box>#12</Box>
+        </Column>
+      </Row>
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
-  paragraph: {
-    margin: 24,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});
