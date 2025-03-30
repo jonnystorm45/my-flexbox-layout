@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, StatusBar } from 'react-native';
-import styles from "../styles";
-import Row from "../Row";
-import Column from "../Column";
-import Box from "../Box";
+import styles from "./app/styles";
+import Row from "./app/Row";
+import Column from "./app/Column";
+import Box from "./app/Box";
 
 export default function App() {
   return (
